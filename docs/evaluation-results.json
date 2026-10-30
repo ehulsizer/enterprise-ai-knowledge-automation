@@ -1,0 +1,135 @@
+[
+  {
+    "question": "What is the escalation policy for a priority-one support incident?",
+    "checks": {
+      "route": true,
+      "answer_contains": true,
+      "citations_present": true,
+      "mcp_used": true
+    },
+    "passed": true,
+    "trace": [
+      "route:knowledge",
+      "retrieve:qdrant",
+      "generate:grounded",
+      "check:citation-identifiers"
+    ],
+    "embedding_mode": "fastembed",
+    "generation_mode": "extractive",
+    "duration_ms": 78.4
+  },
+  {
+    "question": "What does the refund policy say about enterprise subscriptions?",
+    "checks": {
+      "route": true,
+      "answer_contains": true,
+      "citations_present": true,
+      "mcp_used": true
+    },
+    "passed": true,
+    "trace": [
+      "route:knowledge",
+      "retrieve:qdrant",
+      "generate:grounded",
+      "check:citation-identifiers"
+    ],
+    "embedding_mode": "fastembed",
+    "generation_mode": "extractive",
+    "duration_ms": 24.0
+  },
+  {
+    "question": "What is the status of order ORD-1003?",
+    "checks": {
+      "route": true,
+      "answer_contains": true,
+      "citations_present": true,
+      "mcp_used": true
+    },
+    "passed": true,
+    "trace": [
+      "route:operational",
+      "tools:mcp:stdio:enterprise-rest",
+      "generate:grounded",
+      "check:citation-identifiers"
+    ],
+    "embedding_mode": "fastembed",
+    "generation_mode": "extractive",
+    "duration_ms": 2456.9
+  },
+  {
+    "question": "Show the open service tickets for customer CUST-002.",
+    "checks": {
+      "route": true,
+      "answer_contains": true,
+      "citations_present": true,
+      "mcp_used": true
+    },
+    "passed": true,
+    "trace": [
+      "route:operational",
+      "tools:mcp:stdio:enterprise-rest",
+      "generate:grounded",
+      "check:citation-identifiers"
+    ],
+    "embedding_mode": "fastembed",
+    "generation_mode": "extractive",
+    "duration_ms": 2541.7
+  },
+  {
+    "question": "According to policy, what should happen next for ticket TKT-1001?",
+    "checks": {
+      "route": true,
+      "answer_contains": true,
+      "citations_present": true,
+      "mcp_used": true
+    },
+    "passed": true,
+    "trace": [
+      "route:both",
+      "tools:mcp:stdio:enterprise-rest",
+      "retrieve:qdrant",
+      "generate:grounded",
+      "check:citation-identifiers"
+    ],
+    "embedding_mode": "fastembed",
+    "generation_mode": "extractive",
+    "duration_ms": 2445.2
+  },
+  {
+    "question": "hello assistant",
+    "checks": {
+      "route": true,
+      "answer_contains": true,
+      "citations_present": true,
+      "mcp_used": true
+    },
+    "passed": true,
+    "trace": [
+      "route:clarify",
+      "generate:clarification",
+      "check:citation-identifiers"
+    ],
+    "embedding_mode": "fastembed",
+    "generation_mode": "clarification",
+    "duration_ms": 9.4
+  },
+  {
+    "question": "What is the status of order ORD-9999?",
+    "checks": {
+      "route": true,
+      "answer_contains": true,
+      "citations_present": true,
+      "mcp_used": true
+    },
+    "passed": true,
+    "trace": [
+      "route:operational",
+      "tools:mcp:stdio:enterprise-rest",
+      "generate:grounded",
+      "check:citation-identifiers"
+    ],
+    "embedding_mode": "fastembed",
+    "generation_mode": "extractive",
+    "duration_ms": 2767.2
+  }
+]

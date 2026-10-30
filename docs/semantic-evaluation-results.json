@@ -1,0 +1,35 @@
+[
+  {
+    "question": "Who must be notified when production goes down?",
+    "expected": "escalation.md",
+    "top_source": "escalation.md",
+    "passed": true,
+    "scores": [
+      0.6744054042676577,
+      0.6471485376471147,
+      0.5661017243434027
+    ]
+  },
+  {
+    "question": "Can we get our money back for an enterprise subscription?",
+    "expected": "refunds.md",
+    "top_source": "refunds.md",
+    "passed": true,
+    "scores": [
+      0.7712386322308034,
+      0.6375202041173247,
+      0.5902859784956521
+    ]
+  },
+  {
+    "question": "How do administrators restore access safely?",
+    "expected": "accounts.md",
+    "top_source": "accounts.md",
+    "passed": true,
+    "scores": [
+      0.6174164033251954,
+      0.5712485633522161,
+      0.5579928486454188
+    ]
+  }
+]
